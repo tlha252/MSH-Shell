@@ -1,6 +1,8 @@
 # MSH-Shell
 
 Description of Project:
+        
+        
         The goal of this program is to write a shell in C++ that allows users to
         interactively execute Unix programs. My Shell (msh) reads in commands
         typed by the user into a vector<string> that tokenizes the input in
@@ -16,15 +18,21 @@ Description of Project:
         parameter.
 
 Files Included:
-	    msh.cpp
+	    
+        
+        msh.cpp
 	    Makefile
 	    README
 
 Command to compile:
-	    g++ -Wall msh.cpp -o msh (compiled this way in the makefile)
+	    
+        
+        g++ -Wall msh.cpp -o msh (compiled this way in the makefile)
 
 Output EXE:
-	    msh
+	    
+        
+        msh
 
 Commands you can enter:
 
