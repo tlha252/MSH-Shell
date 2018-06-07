@@ -1,19 +1,19 @@
 # MSH-Shell
 
-General Description of Project:
-	The goal of this program was to write a shell in C++ that allows users to
-	interactively execute Unix programs. My Shell (msh) reads in commands
-	typed by the user into a vector<string> that tokenizes the input in
-	order to dilleniate each element of input. Each token is passed to corresponding
-	conditional statements that determines what was asked of the shell (either
-	control commands or built in commands). If the user selects one of the program
-	control commands, fork() and execvp() are utilized to create copies of the shell
-	process and allows a child process to execute the passed program while the parent
-	continues the process of the shell itself. If one of the built-in commands are selected
-	msh modifies local variables within the cpp such as: the printed prompt, stored variables
-	, and list of running processes to execute the specifications of said command. msh
-	continues to ask for user input until done is selected and returns with the specified
-	parameter.
+    Description of Project:
+        The goal of this program is to write a shell in C++ that allows users to
+        interactively execute Unix programs. My Shell (msh) reads in commands
+        typed by the user into a vector<string> that tokenizes the input in
+        order to dilleniate each element of input. Each token is passed to corresponding
+        conditional statements that determines what was asked of the shell (either
+        control commands or built in commands). If the user selects one of the program
+        control commands, fork() and execvp() are utilized to create copies of the shell
+        process and allows a child process to execute the passed program while the parent
+        continues the process of the shell itself. If one of the built-in commands are selected
+        msh modifies local variables within the cpp such as: the printed prompt, stored variables
+        , and list of running processes to execute the specifications of said command. msh
+        continues to ask for user input until done is selected and returns with the specified
+        parameter.
 
     Files Included:
 	    msh.cpp
