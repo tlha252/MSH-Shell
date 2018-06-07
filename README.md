@@ -28,7 +28,7 @@ Output EXE:
 
 Commands you can enter:
 
----------------------------------------------------------------BUILT IN COMMANDS----------------------------------------------------------------- 
+
     setvar variable value
         variable is any reasonable variable name (starting with a letter, continuing with letters or numbers), value is a token. Variable names are case-sensitive. The effect of this command is to associate the variable name with the given value in a data structure inside msh.
     
@@ -43,9 +43,6 @@ Commands you can enter:
 
     done value
         msh exits. If the value parameter is present, it must be a non-negative integer, in which case msh uses that integer as its exit status. If the parameter is absent, msh exits with status 0. msh also accepts <control-D> (end-of-file) on the input stream and treats it like done 0.
---------------------------------------------------------------END OF BUILT IN COMMANDS-----------------------------------------------------------
-
-------------------------------------------------------PROGRAM CONTROL COMMANDS------------------------------------------------------------------
 
     run cmd [param ... ]
         (The brackets indicate "optional" and the dots indicate "and more if desired".) The user submits a run command to execute a program. The keyword run must appear as the first token on the command line, followed by the command to be executed: cmd is a token that specifies the filename of the program the user wants to execute. It is followed by zero or more tokens specifying parameters. msh waits for the program to finish before it prompts for and accepts the next command.If cmd starts with a / character, it is a full path name starting at the root of the filesystem. A cmd that starts with ./ is a path name starting in the current directory. Otherwise, msh looks for cmd in a list of directories indicated by the variable PATH, whose value is a colon-separated list of directories. By default, PATH has value /bin:/usr/bin; the user can change that value by assigning a new value to the variable PATH.
@@ -56,7 +53,7 @@ Commands you can enter:
     tovar variable cmd [param ... ]
         The tovar command executes the program cmd along with its parameters, if any, just like the run command. However, msh absorbs the standard output of the program and assigns it as the value of variable specified by the second token.
 
-----------------------------------------------------END OF PROGRAM CONTROL COMMANDS--------------------------------------------------------------
+
 
 
 
